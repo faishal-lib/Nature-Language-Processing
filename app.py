@@ -24,7 +24,7 @@ from nltk.stem import PorterStemmer
 
 # =[Variabel Global]=============================
 
-app = Flask(__name__)
+app   = Flask(__name__, static_url_path='/static')
 model = None
 
 stop_word = None
@@ -36,8 +36,8 @@ vocab         = None
 
 # [Routing untuk Halaman Utama atau Home]	
 @app.route("/")
-if request.method == 'GET':
-        return render_template("templates/index.html")
+def beranda():
+    return render_template('index.html')
 
 # [Routing untuk API]		
 @app.route("/api/deteksi",methods=['POST'])
