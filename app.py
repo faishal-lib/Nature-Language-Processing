@@ -40,7 +40,7 @@ def beranda():
     return render_template('index.html')
 
 # [Routing untuk API]		
-@app.route("/api/deteksi",methods=['POST'])
+@app.route("/",methods=['POST'])
 def apiDeteksi():
 	# Nilai default untuk string input 
 	text_input = ""
