@@ -4,6 +4,7 @@ import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
+from nltk.corpus import punkt
 
 
 # Fungsi untuk Membersihkan Text
